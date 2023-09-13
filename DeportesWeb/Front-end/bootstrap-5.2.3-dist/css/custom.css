@@ -1,0 +1,382 @@
+
+
+
+
+@media (min-width: 992px) {
+    .div-info-text {
+        border-left: 0.5rem solid rgb(200, 32, 32);
+        padding: 0 0 0 2rem;
+    }
+}
+
+/* navbar */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    width: auto;
+    height: 50px;
+
+}
+
+
+.items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 120px;
+    margin-top: 50px;
+    padding-top: 20px;
+    position: relative;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: rgb(215, 15, 15);
+
+    position: relative;
+    top: 50px;
+    width: 0px;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+#mainNav {
+    background-color: #ffffff;
+    border: none;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+
+@media (min-width: 992px) {
+    #mainNav {
+        background-color: #ffffff;
+        border: none;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+
+    #mainNav .navbar-brand {
+        font-size: 1.5em;
+        transition: font-size 0.3s ease-in-out;
+    }
+
+    #mainNav .navbar-brand img {
+        height: 2rem;
+        transition: height 0.3s ease-in-out;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand svg,
+    #mainNav.navbar-shrink .navbar-brand img {
+        height: 1.5rem;
+    }
+
+    #mainNav .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+
+    #mainNav .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+}
+
+/*footer*/
+.icon-insta{
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
+/* masthead */
+
+.masthead {
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+    padding: 17rem 0;
+    background: url("../../complements/info.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+
+/* login */
+#image-login {
+    height: 300px;
+    background: url("../../complements/info.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#card-form-login {
+    margin-top: -100px;
+    background: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(30px);
+}
+
+
+
+
+
+
+
+
+
+/* Evento */
+
+
+.evento .evento-item {
+    margin-bottom: 30px;
+  }
+  
+  .evento #evento-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .evento #evento-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+  
+  .evento #evento-flters li:hover,
+  .evento #evento-flters li.filter-active {
+    color: #fff;
+    background: #e03a3c;
+  }
+  
+  .evento #evento-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  .evento .evento-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(17, 17, 17, 0.6);
+  }
+  
+  .evento .evento-wrap::before {
+    content: "";
+    background: rgba(17, 17, 17, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .evento .evento-wrap img {
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .evento .evento-wrap .evento-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .evento .evento-wrap .evento-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .evento .evento-wrap .evento-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .evento .evento-wrap .evento-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .evento .evento-wrap .evento-links a {
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .evento .evento-wrap .evento-links a:hover {
+    color: #fff;
+  }
+  
+  .evento .evento-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .evento .evento-wrap:hover img {
+    transform: scale(1.2);
+  }
+  
+  .evento .evento-wrap:hover .evento-info {
+    opacity: 1;
+  }
+
+
+  .futbol{
+    background: url("../../complements/natacionHD.jpeg");
+  }
+  .baloncesto{
+    background: url("../../complements/natacionHD.jpeg");
+  }
+  .atletismo{
+    background: url("../../complements/natacionHD.jpeg");
+  }
+  .tenis{
+    background: url("../../complements/natacionHD.jpeg");
+  }
+  .voleibol{
+    background: url("../../complements/natacionHD.jpeg");
+  }
+  .natacion{
+    background: url("../../complements/natacionHD.jpeg");
+  }
+
+  .deporte_imagen{
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+    padding: 17rem 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  
+
+
+
+
+
+
+
+
+  
+
+/*Contacto*/
+/*
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}*/
+
+#contact h3.section-subheading{
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+}
+
+#contact form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+
+#contact{
+  background: url("../../complements/info.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+}
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+
+.is-invalid ~ .invalid-feedback{
+  display: block;
+}
+
+#message{
+  height: 8rem;
+}
+
+
+#contact-banner{
+  background: rgba(254, 254, 254, 0.5);
+  border-radius: 1rem;
+}

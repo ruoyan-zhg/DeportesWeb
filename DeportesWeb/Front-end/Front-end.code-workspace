@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../XAMPP/install/htdocs/PHPLogin/Login-christmas"
+		},
+		{
+			"path": "../../../XAMPP/install/htdocs/encriptado"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Front-end"
+	}
+}
